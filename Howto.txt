@@ -1,0 +1,10 @@
+train.csv is the raw file containing the data of questions which can be downloaded from 
+https://www.kaggle.com/c/predict-closed-questions-on-stack-overflow/data
+
+Order of execution of files in the codes folder :
+1. pyhton featureExtraction.py train.csv features.csv
+2. python feature_vector_scale.py feautres.csv features_scaled.csv
+3. python trainSVM.py features_scaled.csv output_svm.csv
+4. python nn_trainer.py features_scaled.csv output_nn.csv
+
+output_svm and output_nn will contain accuracy and prediction results .
